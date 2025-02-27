@@ -1,7 +1,12 @@
+// Name: Lara Franchesca N. Dy
+// Student Number: 2023-16277
+// Section: C3L
+
 import { appendFileSync } from 'node:fs';
 import { v4 as uuidv4 } from 'uuid';
 import validator from 'validator';
 
+// function to generate unique id
 function generateUniqueID(firstName, lastName){
 // if not fname and lname return null
     if(!firstName || !lastName) return null;
@@ -15,6 +20,7 @@ function generateUniqueID(firstName, lastName){
     return `${fname}${lname}${uniqueString}`;
 }
 
+// function to add account
 function addAccount(user){
 // if user length not 4 return false
     if(user.length != 4) return false;
